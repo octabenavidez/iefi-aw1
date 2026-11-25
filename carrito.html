@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Garage - Mi carrito</title>
+    <link rel="stylesheet" href="recursos/css/componentes.css">
+    <link rel="stylesheet" href="recursos/css/index.css">
+    <script type="module" src="./recursos/js/carrito-vista.js"></script>
+</head>
+<body>
+    <header class="cabecera-principal">
+        <a href="./index.html">
+            <img src="./recursos/imagenes/logo.svg" alt="logo Racing Garage">
+        </a>
+
+        <nav aria-label="Navegación principal">
+            <a href="./index.html">Inicio</a>
+            <a href="./catalogo.html">Catálogo</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./carrito.html" aria-current="page">Carrito</a>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <section class="intro-pagina intro-carrito">
+            <h1>Tu selección va tomando forma.</h1>
+            <p>Revisá tus productos antes de continuar. Si todavía estás comparando opciones, podés volver al catálogo cuando quieras.</p>
+        </section>
+
+        <div class="formulario-carrito">
+            <section>
+                <h2 id="titulo-productos-carrito">Lo que elegiste</h2>
+                <p class="texto-apoyo">Cada proyecto empieza con una buena elección.</p>
+                <!-- listado interactivo renderizado vía JavaScript -->
+                <div class="carrito-productos" aria-labelledby="titulo-productos-carrito"></div>
+                <p class="visually-hidden" id="estado-carrito" role="status" aria-live="polite" aria-atomic="true"></p>
+            </section>
+
+            <section class="resumen-pedido">
+                <h2>Resumen del pedido</h2>
+                <p class="texto-apoyo">Un último vistazo antes de preparar todo.</p>
+                <ul aria-live="polite" aria-atomic="true">
+                    <li><span>Subtotal</span> <span>$ 0</span></li>
+                    <li><span>Envío</span> <span>Gratis</span></li>
+                    <li><span>Total</span> <span>$ 0</span></li>
+                </ul>
+
+                <form class="formulario-cupon" id="formulario-cupon">
+                    <label for="codigo-cupon">¿Tenés un código de descuento?</label>
+                    <p class="texto-apoyo">Probá PISTA2000 y obtené hasta $ 2.000 de descuento.</p>
+                    <div class="formulario-cupon-campo">
+                        <input type="text" id="codigo-cupon" name="codigo-cupon" placeholder="Ej: PISTA2000" autocomplete="off">
+                        <button class="boton-secundario" type="submit">Aplicar</button>
+                    </div>
+                    <p class="mensaje-cupon" id="mensaje-cupon" role="status" aria-live="polite" aria-atomic="true"></p>
+                </form>
+
+                <a class="boton-principal" id="enviar-pedido-whatsapp" href="#" target="_blank" rel="noopener noreferrer" hidden>
+                    Enviar pedido por WhatsApp
+                </a>
+                <a class="boton-principal" href="./finalizar-compra.html">Proceder al pago</a>
+                <a class="vinculo-secundario" href="./catalogo.html">Seguir comprando</a>
+            </section>
+        </div>
+    </main>
+    <footer class="pie-principal">
+        <ul class="pie-lista">
+            <li>
+                <a href="https://instagram.com/@racinggarage" target="_blank" aria-label="Seguinos en Instagram, se abre en una pestaña nueva">
+                    @racinggarage
+                </a>
+            </li>
+            <li>
+                Córdoba, Argentina
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

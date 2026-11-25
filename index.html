@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Garage</title>
+    <link rel="stylesheet" href="recursos/css/componentes.css">
+    <link rel="stylesheet" href="recursos/css/index.css">
+</head>
+<body>
+    <header class="cabecera-principal">
+        <a href="./index.html">
+            <img src="./recursos/imagenes/logo.svg" alt="logo Racing Garage">
+        </a>
+
+        <nav aria-label="Navegación principal">
+            <a href="./index.html" aria-current="page">Inicio</a>
+            <a href="./catalogo.html">Catálogo</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./carrito.html">Carrito</a>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <section class="portada-hero" aria-labelledby="titulo-portada">
+            <img class="portada-imagen" src="./recursos/imagenes/hero.png" alt="Vista superior de un auto deportivo rojo frente al logo de Racing Garage">
+            <div class="portada-copy">
+                <p class="portada-lema">Tu auto, en las mejores manos.</p>
+                <h1 id="titulo-portada">Equipá tu vehículo</h1>
+                <p>Accesorios y productos para el cuidado, mantenimiento y personalización de tu auto. Desde ese detalle que cambia todo hasta el próximo gran proyecto.</p>
+                <a class="boton-principal" href="./catalogo.html">Ver catálogo <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section class="categorias">
+            <div class="titulo-seccion">
+                <div><h2>¿Qué te gustaría mejorar?</h2></div>
+                <p>Elegí una categoría y encontrá esa mejora que ya te imaginaste.</p>
+            </div>
+            <ul class="categorias-lista">
+                <li><a href="./catalogo.html?categoria=interior"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M5 20.5 7.4 13a3 3 0 0 1 2.8-2h11.6a3 3 0 0 1 2.8 2l2.4 7.5v5H5zM8 20h16M9 25.5v2m14-2v2M10 15h12"/><circle cx="9" cy="21" r="1"/><circle cx="23" cy="21" r="1"/></svg><span class="categoria-copy"><strong>Accesorios interiores</strong><span>Tu espacio, con tu sello.</span></span></a></li>
+                <li><a href="./catalogo.html?categoria=exterior"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="m4 21 2-6 4-3h12l4 3 2 6v4H4zM8 15h16M8 25v2m16-2v2M3 12h5m16 0h5"/><circle cx="9" cy="21" r="1"/><circle cx="23" cy="21" r="1"/></svg><span class="categoria-copy"><strong>Accesorios exteriores</strong><span>Presencia desde cualquier ángulo.</span></span></a></li>
+                <li><a href="./catalogo.html?categoria=limpieza"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M13 5h7v4h-7zM12 9h9l2 3v15H10V12zM15 5V3h7M14 16h6M14 20h6"/><path d="M25 7c1.5 1.3 1.5 2.7 0 4M27.5 13c1.2 1 1.2 2 0 3"/></svg><span class="categoria-copy"><strong>Limpieza y cuidado</strong><span>Que se note el cariño.</span></span></a></li>
+                <li><a href="./catalogo.html?categoria=iluminacion"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M11 20a9 9 0 1 1 10 0l-1 2h-8zM12 25h8m-7 3h6M16 1v3M3 13h3m20 0h3M5.5 4.5l2 2m17 17 2 2m0-21-2 2m-17 17-2 2"/></svg><span class="categoria-copy"><strong>Iluminación</strong><span>Otra mirada sobre la ruta.</span></span></a></li>
+                <li><a href="./catalogo.html?categoria=personalizacion"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="m13 3 1 3a11 11 0 0 1 4 0l1-3 4 2-1 3a11 11 0 0 1 3 3l3-1 2 4-3 1a11 11 0 0 1 0 4l3 1-2 4-3-1a11 11 0 0 1-3 3l1 3-4 2-1-3a11 11 0 0 1-4 0l-1 3-4-2 1-3a11 11 0 0 1-3-3l-3 1-2-4 3-1a11 11 0 0 1 0-4l-3-1 2-4 3 1a11 11 0 0 1 3-3L9 5z"/><circle cx="16" cy="16" r="4"/></svg><span class="categoria-copy"><strong>Personalización</strong><span>Hacelo inconfundible.</span></span></a></li>
+            </ul>
+        </section>
+        <section class="inicio-cierre">
+            <p>La próxima modificación no tiene que ser enorme.</p>
+            <a href="./nosotros.html">Conocé el espíritu de Racing Garage <span aria-hidden="true">→</span></a>
+        </section>
+    </main>
+    <footer class="pie-principal">
+        <ul class="pie-lista">
+            <li>
+                <a href="https://instagram.com/@racinggarage" target="_blank" aria-label="Seguinos en Instagram, se abre en una pestaña nueva">
+                    @racinggarage
+                </a>
+            </li>
+            <li>
+                Córdoba, Argentina
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
